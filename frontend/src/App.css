@@ -1,0 +1,194 @@
+/* ה-body עכשיו "טיפש" ופשוט - הוא לא יציק לדפים אחרים */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(185, 59, 59, 0.247);
+    font-family: sans-serif;
+}
+
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100%;
+}
+
+.login-page button{
+    width: 60%;
+    align-self: center;
+    background-color: rgba(95, 158, 160, 0.74);
+    color: white;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 350px;
+    min-height: 300px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    gap: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.agent-dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100%; 
+}
+
+.dashboard-container{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    width: 350px;
+    min-height: 300px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    gap: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.view-report{
+   border: 1px solid black;
+   border-radius: 10px;
+   background-color: rgba(95, 158, 160, 0.634);
+   width: 80%;
+}
+
+.send-report{
+   border: 1px solid black;
+   border-radius: 10px;
+   background-color: rgba(95, 158, 160, 0.634);
+   width: 80%;
+}
+
+.send-report:hover, .view-report:hover{
+   transition: all 0.3s ease; 
+   cursor: pointer;
+   transform: translateY(-4px);
+   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.new-report-page{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    min-height: 400px;
+    padding: 10px;
+    gap: 10px;
+    justify-self: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    /* text-align: center; */
+}
+
+ .new-report-page select, 
+.new-report-page textarea,
+.new-report-page input {
+    width: 70%;            
+    box-sizing: border-box; 
+     text-align: center;      
+}
+
+.new-report-page button{
+    width: 50%;
+    margin-top: 20px;
+    background-color: rgba(95, 158, 160, 0.312);
+    width: fit-content;
+}
+
+.new-report-page button:hover {
+    transform: scale(1.1); 
+}
+
+.new-report-page nav {
+    transition: transform 0.3
+    s ease-in-out; 
+}
+
+
+.reports-table-wrapper {
+    background-color: white;
+    width: 98%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.main-table {
+    width: 100%;
+    table-layout: fixed; 
+    border-collapse: collapse;
+}
+
+.main-table th, .main-table td {
+    border: 1px solid #ddd;
+    padding: 6px 4px;
+    font-size: 11px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.main-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+
+.csv-upload-page{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+    height: 250px;
+    background-color: white;
+}
+
+.csv-upload-page input{
+    padding-left: 85px;
+}
+
+.admin-dashboard-page{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 25px;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+}
+
+.admin-dashboard-page .agent,
+.admin-dashboard-page .reports{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.admin-dashboard-page .agent,
+.admin-dashboard-page .reports {
+    transform: scale(1.1); 
+}
+
+.admin-dashboard-page .agent,
+.admin-dashboard-page .reports {
+    transition: transform 0.3s ease-in-out; 
+}

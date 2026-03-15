@@ -1,4 +1,5 @@
-function atBash(str) {
+
+export function atBashPassword(str) {
   if (typeof str !== "string") return ""
   return str
     .split("")
@@ -15,4 +16,5 @@ function atBash(str) {
     .join("")
 }
 
-export { atBash }
+
+
